@@ -59,6 +59,25 @@ export const EXECUTIVE_TEAM: TeamMember[] = [
     },
   },
   {
+    id: "atharva-vyas",
+    name: "Atharva Vyas",
+    role: "Vice President",
+    title: "VICE PRESIDENT",
+    badge: "STRATEGY & OUTREACH",
+    specialty: "Strategy • Campus Outreach • Cohort Growth",
+    bio: "Driving strategic growth and student outreach across all club programs. Spearheads campus partnerships, industry mentorship networks, and ensures seamless execution across flagship club initiatives.",
+    coordinates: "ORBIT_GAMMA // NODE 03",
+    avatarSeed: "atharva",
+    socials: {
+      github: "https://github.com",
+      linkedin: "https://linkedin.com",
+    },
+    metrics: {
+      label: "Strategic Initiatives",
+      value: "12+ Campus Chapters",
+    },
+  },
+  {
     id: "rohit-kurve",
     name: "Rohit Kurve",
     role: "Tech Lead",
@@ -66,7 +85,7 @@ export const EXECUTIVE_TEAM: TeamMember[] = [
     badge: "ENGINEERING CORE",
     specialty: "Systems Architecture • Deep Tech • AI & Research",
     bio: "Leading deep technical initiatives, code reviews, and high-performance engineering tracks. Specializes in low-latency distributed networks, compiler design, and modern neural architectures.",
-    coordinates: "ORBIT_GAMMA // NODE 03",
+    coordinates: "ORBIT_DELTA // NODE 04",
     avatarSeed: "rohit",
     socials: {
       github: "https://github.com",
@@ -85,7 +104,7 @@ export const EXECUTIVE_TEAM: TeamMember[] = [
     badge: "PLATFORM ARCHITECT",
     specialty: "FullStack Engineering • Cloud & DevOps • WebGL",
     bio: "Directing product engineering sprints and club software platforms. Mentors student squads through end-to-end SDLC, continuous deployment pipelines, and cutting-edge creative web experiences.",
-    coordinates: "ORBIT_DELTA // NODE 04",
+    coordinates: "ORBIT_EPSILON // NODE 05",
     avatarSeed: "naman",
     socials: {
       github: "https://github.com",

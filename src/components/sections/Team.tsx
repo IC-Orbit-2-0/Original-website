@@ -26,13 +26,13 @@ export function Team({ onHoverSound }: TeamProps) {
           subtitle="Meet the visionaries, architects, and engineering leads steering IC ORBITE."
         />
 
-        {/* 4 Core Leaders Grid */}
+        {/* Executive Leadership Grid */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8"
         >
           {EXECUTIVE_TEAM.map((member, index) => (
             <motion.div key={member.id} variants={fadeInUp}>
@@ -42,7 +42,7 @@ export function Team({ onHoverSound }: TeamProps) {
               >
                 <div>
                   {/* Top Coordinate Badge */}
-                  <div className="flex items-center justify-between mb-5">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-5">
                     <span className="font-mono text-[10px] tracking-widest text-violet-400 uppercase">
                       {member.coordinates}
                     </span>

@@ -46,6 +46,7 @@ A complete, production-quality, highly immersive 3D motion-based website designe
 8. **Executive Leadership & Founding Team**:
    - **Mahak Saxena** — President (Founding President)
    - **Amit Dhanoriya** — Vice President (Founding Vice President)
+   - **Atharva Vyas** — Vice President
    - **Rohit Kurve** — Tech Lead
    - **Naman Pandey** — Development Lead
    - Dedicated interactive section with 3D tilt glassmorphic cards, orbital badges, specialties, and social links.
