@@ -1,0 +1,32 @@
+[
+  {
+    "id": "app-1001",
+    "name": "Siddharth Rao",
+    "email": "siddharth.rao@college.edu",
+    "track": "FullStack & Systems",
+    "experience": "Intermediate builder",
+    "callsign": "#ICO-1082",
+    "status": "APPROVED",
+    "createdAt": "2026-09-28T14:32:00.000Z"
+  },
+  {
+    "id": "app-1002",
+    "name": "Pooja Kulkarni",
+    "email": "pooja.k@college.edu",
+    "track": "AI & Autonomous Agents",
+    "experience": "Advanced / Hackathon veteran",
+    "callsign": "#ICO-3921",
+    "status": "APPROVED",
+    "createdAt": "2026-10-01T09:15:00.000Z"
+  },
+  {
+    "id": "app-1791193893376",
+    "name": "Aarush Dave",
+    "email": "aarush.dave@college.edu",
+    "track": "AI & Autonomous Agents",
+    "experience": "Intermediate builder",
+    "callsign": "#ICO-3579",
+    "status": "APPROVED",
+    "createdAt": "2026-10-05T09:51:33.376Z"
+  }
+]

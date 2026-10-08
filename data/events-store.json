@@ -1,0 +1,45 @@
+[
+  {
+    "id": "orbit-code-jam-2026",
+    "title": "CODE JAM 4.0",
+    "spotsLeft": 27,
+    "registrations": [
+      {
+        "name": "Devansh Mishra",
+        "email": "devansh@college.edu",
+        "ticketId": "TKT-CJ4-01",
+        "registeredAt": "2026-10-02T11:00:00.000Z"
+      },
+      {
+        "name": "Ankit Verma",
+        "email": "ankit.verma@college.edu",
+        "ticketId": "TKT-6474",
+        "registeredAt": "2026-10-05T09:52:07.360Z"
+      }
+    ]
+  },
+  {
+    "id": "deep-tech-talk-agents",
+    "title": "TECH TALKS: AUTONOMOUS AGENTS",
+    "spotsLeft": 64,
+    "registrations": []
+  },
+  {
+    "id": "ic-orbit-hackathon-annual",
+    "title": "ORBIT HACK: THE MISSION",
+    "spotsLeft": 120,
+    "registrations": []
+  },
+  {
+    "id": "threejs-creative-workshop",
+    "title": "CREATIVE 3D WEB WORKSHOP",
+    "spotsLeft": 14,
+    "registrations": []
+  },
+  {
+    "id": "algorithmic-speed-clash",
+    "title": "ALGO CLASH: SPEED DRILLS",
+    "spotsLeft": 80,
+    "registrations": []
+  }
+]
