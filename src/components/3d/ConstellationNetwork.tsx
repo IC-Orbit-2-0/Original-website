@@ -1,23 +1,24 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { COMMUNITY_MEMBERS, CommunityMember } from "@/data/community";
-import { Users, Code, Award, Sparkles } from "lucide-react";
+import { Users } from "lucide-react";
 
 export function ConstellationNetwork() {
   const [activeMember, setActiveMember] = useState<CommunityMember | null>(COMMUNITY_MEMBERS[0]);
 
-  // Connecting line segments between constellation nodes
+  // Symmetrical 5-node star constellation connections
   const connections = [
-    [0, 1],
-    [1, 2],
-    [2, 0],
-    [0, 3],
-    [3, 5],
-    [5, 4],
-    [4, 1],
-    [2, 5],
+    [0, 1], // Mahak -> Amit
+    [0, 2], // Mahak -> Athrava
+    [1, 3], // Amit -> Naman
+    [2, 4], // Athrava -> Rohit
+    [3, 4], // Naman -> Rohit
+    [1, 2], // Amit -> Athrava
+    [0, 3], // Mahak -> Naman
+    [0, 4], // Mahak -> Rohit
   ];
 
   return (
@@ -34,7 +35,7 @@ export function ConstellationNetwork() {
         <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
           <span className="flex items-center gap-1.5">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-            NODES ACTIVE
+            5 NODES ACTIVE
           </span>
           <span>LATENCY: 4ms</span>
         </div>
@@ -47,6 +48,7 @@ export function ConstellationNetwork() {
             {connections.map(([fromIdx, toIdx], i) => {
               const from = COMMUNITY_MEMBERS[fromIdx];
               const to = COMMUNITY_MEMBERS[toIdx];
+              if (!from || !to) return null;
               return (
                 <line
                   key={i}
@@ -70,7 +72,7 @@ export function ConstellationNetwork() {
                 key={member.id}
                 onClick={() => setActiveMember(member)}
                 onMouseEnter={() => setActiveMember(member)}
-                whileHover={{ scale: 1.25 }}
+                whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
                   top: `${member.y}%`,
@@ -80,25 +82,37 @@ export function ConstellationNetwork() {
                 className="group absolute z-20 flex flex-col items-center cursor-pointer"
                 aria-label={`View ${member.name}`}
               >
-                {/* Node Orb with Initials */}
+                {/* Node Orb with Photo / Initials */}
                 <div
-                  className={`flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full border-2 font-mono text-xs font-bold transition-all duration-300 ${
+                  className={`relative flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full border-2 overflow-hidden font-mono text-xs font-bold transition-all duration-300 ${
                     isSelected
-                      ? "border-violet-300 bg-violet-600 text-white shadow-[0_0_25px_#7C3AED] scale-110"
+                      ? "border-violet-300 bg-violet-600 text-white shadow-[0_0_25px_#7C3AED] ring-4 ring-violet-500/40 scale-110"
                       : "border-violet-500/40 bg-[#0B0D18] text-violet-300 hover:border-violet-300 hover:text-white"
                   }`}
                 >
-                  {member.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="48px"
+                      className="object-cover object-top"
+                    />
+                  ) : (
+                    <span>
+                      {member.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  )}
                 </div>
 
                 {/* Name Label */}
                 <span
                   className={`mt-1.5 whitespace-nowrap rounded px-1.5 py-0.5 text-[10px] font-mono tracking-wider transition-colors ${
                     isSelected
-                      ? "bg-violet-900/80 text-white font-bold"
+                      ? "bg-violet-900/80 text-white font-bold shadow-[0_0_10px_rgba(124,58,237,0.5)]"
                       : "text-slate-400 group-hover:text-violet-200"
                   }`}
                 >
@@ -118,16 +132,32 @@ export function ConstellationNetwork() {
               animate={{ opacity: 1, x: 0 }}
               className="rounded-2xl border border-violet-500/30 bg-[#0B0D18]/90 p-6 backdrop-blur-xl"
             >
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-violet-400 bg-violet-950/60 font-mono font-bold text-violet-200 shadow-[0_0_15px_rgba(124,58,237,0.4)]">
-                  {activeMember.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
+              <div className="flex items-center gap-3.5">
+                <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-violet-400 bg-violet-950/60 overflow-hidden font-mono font-bold text-violet-200 shadow-[0_0_15px_rgba(124,58,237,0.4)]">
+                  {activeMember.image ? (
+                    <Image
+                      src={activeMember.image}
+                      alt={activeMember.name}
+                      fill
+                      sizes="56px"
+                      className="object-cover object-top"
+                    />
+                  ) : (
+                    <span>
+                      {activeMember.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  )}
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-white">{activeMember.name}</h4>
-                  <p className="text-xs font-mono text-violet-300">{activeMember.role}</p>
+                  {activeMember.role && (
+                    <p className="text-xs font-mono font-semibold text-violet-300 uppercase">
+                      {activeMember.role}
+                    </p>
+                  )}
                 </div>
               </div>
 

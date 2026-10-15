@@ -18,6 +18,7 @@ export function Footer() {
     { label: "What We Do", href: "#what-we-do" },
     { label: "Events", href: "#events" },
     { label: "Projects", href: "#projects" },
+    { label: "Team", href: "#team" },
     { label: "Community", href: "#community" },
     { label: "Join", href: "#join" },
   ];

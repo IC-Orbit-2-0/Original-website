@@ -1,9 +1,9 @@
 export interface CommunityMember {
   id: string;
   name: string;
-  role: string;
+  role?: string;
+  image: string;
   specialty: string;
-  avatarSeed: string;
   quote: string;
   x: number; // percentage in constellation field
   y: number;
@@ -13,62 +13,50 @@ export const COMMUNITY_MEMBERS: CommunityMember[] = [
   {
     id: "mahak",
     name: "Mahak Saxena",
-    role: "President • Founder",
+    role: "President",
+    image: "/images/members/Mahak.png",
     specialty: "Club Governance & Strategy",
-    avatarSeed: "mahak",
     quote: "IC ORBITE was created so that no student with an ambitious idea has to build in isolation.",
     x: 50,
     y: 18,
   },
   {
     id: "amit",
-    name: "Amit Dhanoriya",
-    role: "Vice President • Co-Founder",
+    name: "Amit",
+    role: "Vice President",
+    image: "/images/members/Amit.png",
     specialty: "Operations & Hackathon Delegations",
-    avatarSeed: "amit",
     quote: "We don't wait for opportunities—we code, coordinate, and conquer hackathons together.",
-    x: 22,
-    y: 35,
+    x: 20,
+    y: 45,
   },
   {
-    id: "rohit",
-    name: "Rohit Kurve",
-    role: "Tech Lead",
-    specialty: "Systems Architecture & Deep Tech",
-    avatarSeed: "rohit",
-    quote: "Deep technical rigor paired with peer curiosity is the fastest catalyst for engineering excellence.",
-    x: 78,
-    y: 35,
+    id: "athrava",
+    name: "Athrava",
+    role: "Vice President",
+    image: "/images/members/Athrava.jpeg",
+    specialty: "Strategic Outreach & Cohort Growth",
+    quote: "Building a premier tech community is about lowering barriers so every student can realize their boldest ideas.",
+    x: 80,
+    y: 45,
   },
   {
     id: "naman",
-    name: "Naman Pandey",
-    role: "Development Lead",
+    name: "Naman",
+    image: "/images/members/Naman.jpeg",
     specialty: "FullStack & Platform Engineering",
-    avatarSeed: "naman",
     quote: "From our first commit to scaling production apps, every sprint here is an adventure in craft.",
     x: 32,
-    y: 72,
+    y: 78,
   },
   {
-    id: "aarav",
-    name: "Aarav Sharma",
-    role: "Core Lead • Systems",
-    specialty: "Rust & Kernel Drivers",
-    avatarSeed: "aarav",
-    quote: "IC ORBITE transformed how I see code. It's not just syntax; it's building things that endure.",
+    id: "rohit",
+    name: "Rohit",
+    image: "/images/members/Rohit.jpeg",
+    specialty: "Systems Architecture & Deep Tech",
+    quote: "Deep technical rigor paired with peer curiosity is the fastest catalyst for engineering excellence.",
     x: 68,
-    y: 72,
-  },
-  {
-    id: "atharva",
-    name: "Atharva Vyas",
-    role: "Vice President",
-    specialty: "Strategic Outreach & Cohort Growth",
-    avatarSeed: "atharva",
-    quote: "Building a premier tech community is about lowering barriers so every student can realize their boldest ideas.",
-    x: 50,
-    y: 84,
+    y: 78,
   },
 ];
 

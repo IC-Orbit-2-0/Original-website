@@ -20,8 +20,8 @@ const NAV_LINKS = [
   { label: "Journey", href: "#journey" },
   { label: "Events", href: "#events" },
   { label: "Projects", href: "#projects" },
-  { label: "Community", href: "#community" },
   { label: "Team", href: "#team" },
+  { label: "Community", href: "#community" },
 ];
 
 export function Navbar({ onOpenJoin, onHoverSound }: NavbarProps) {

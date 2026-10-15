@@ -43,13 +43,13 @@ A complete, production-quality, highly immersive 3D motion-based website designe
    - Categorized filter tabs (`Code Jam`, `Tech Talks`, `Hackathon`, `Workshop`).
    - Real-time spots remaining indicators and registration triggers.
 
-8. **Executive Leadership & Founding Team**:
-   - **Mahak Saxena** — President (Founding President)
-   - **Amit Dhanoriya** — Vice President (Founding Vice President)
-   - **Atharva Vyas** — Vice President
-   - **Rohit Kurve** — Tech Lead
-   - **Naman Pandey** — Development Lead
-   - Dedicated interactive section with 3D tilt glassmorphic cards, orbital badges, specialties, and social links.
+8. **Meet The Orbit — Club Members**:
+   - **Mahak Saxena** — President
+   - **Amit** — Vice President
+   - **Athrava** — Vice President
+   - **Naman**
+   - **Rohit**
+   - Interactive 5-card responsive grid with real member photographs, exact names, roles, LinkedIn profiles, GitHub profiles, and 3D glassmorphic tilt.
 
 9. **Full-Stack Backend & Persistent Storage**:
    - `POST /api/join`: Membership application ingestion, validation, duplicate prevention, and persistent storage in `data/applications.json`.
