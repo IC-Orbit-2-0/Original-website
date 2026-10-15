@@ -21,8 +21,8 @@ export const MEMBERS: Member[] = [
     badge: "MISSION COMMAND",
   },
   {
-    id: "amit",
-    name: "Amit",
+    id: "amit-dhanoriya",
+    name: "Amit Dhanoriya",
     role: "Vice President",
     image: "/images/members/Amit.png",
     linkedin:
@@ -32,8 +32,8 @@ export const MEMBERS: Member[] = [
     badge: "OPERATIONS COMMAND",
   },
   {
-    id: "athrava",
-    name: "Athrava",
+    id: "athrava-vayas",
+    name: "Athrava Vayas",
     role: "Vice President",
     image: "/images/members/Athrava.jpeg",
     linkedin:
@@ -43,25 +43,25 @@ export const MEMBERS: Member[] = [
     badge: "STRATEGY & OUTREACH",
   },
   {
-    id: "naman",
-    name: "Naman",
-    // No role provided: do not display any role or placeholder text
+    id: "naman-pandey",
+    name: "Naman Pandey",
+    role: "Development Lead",
     image: "/images/members/Naman.jpeg",
     linkedin:
       "https://www.linkedin.com/in/naman-pandey-187546339?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     github: "https://github.com/Nammupandit",
     coordinates: "ORBIT_DELTA // NODE 04",
-    badge: "CORE BUILDER",
+    badge: "PLATFORM ARCHITECT",
   },
   {
-    id: "rohit",
-    name: "Rohit",
-    // No role provided: do not display any role or placeholder text
+    id: "rohit-kurve",
+    name: "Rohit Kurve",
+    role: "Technical Lead",
     image: "/images/members/Rohit.jpeg",
     linkedin:
       "https://www.linkedin.com/in/rohit-kurve-514a07437?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     github: "https://github.com/icOrbit1",
     coordinates: "ORBIT_EPSILON // NODE 05",
-    badge: "CORE BUILDER",
+    badge: "ENGINEERING CORE",
   },
 ];

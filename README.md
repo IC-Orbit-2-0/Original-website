@@ -45,10 +45,10 @@ A complete, production-quality, highly immersive 3D motion-based website designe
 
 8. **Meet The Orbit — Club Members**:
    - **Mahak Saxena** — President
-   - **Amit** — Vice President
-   - **Athrava** — Vice President
-   - **Naman**
-   - **Rohit**
+   - **Amit Dhanoriya** — Vice President
+   - **Athrava Vayas** — Vice President
+   - **Naman Pandey** — Development Lead
+   - **Rohit Kurve** — Technical Lead
    - Interactive 5-card responsive grid with real member photographs, exact names, roles, LinkedIn profiles, GitHub profiles, and 3D glassmorphic tilt.
 
 9. **Full-Stack Backend & Persistent Storage**:

@@ -22,7 +22,7 @@ export const COMMUNITY_MEMBERS: CommunityMember[] = [
   },
   {
     id: "amit",
-    name: "Amit",
+    name: "Amit Dhanoriya",
     role: "Vice President",
     image: "/images/members/Amit.png",
     specialty: "Operations & Hackathon Delegations",
@@ -32,7 +32,7 @@ export const COMMUNITY_MEMBERS: CommunityMember[] = [
   },
   {
     id: "athrava",
-    name: "Athrava",
+    name: "Athrava Vayas",
     role: "Vice President",
     image: "/images/members/Athrava.jpeg",
     specialty: "Strategic Outreach & Cohort Growth",
@@ -42,7 +42,8 @@ export const COMMUNITY_MEMBERS: CommunityMember[] = [
   },
   {
     id: "naman",
-    name: "Naman",
+    name: "Naman Pandey",
+    role: "Development Lead",
     image: "/images/members/Naman.jpeg",
     specialty: "FullStack & Platform Engineering",
     quote: "From our first commit to scaling production apps, every sprint here is an adventure in craft.",
@@ -51,7 +52,8 @@ export const COMMUNITY_MEMBERS: CommunityMember[] = [
   },
   {
     id: "rohit",
-    name: "Rohit",
+    name: "Rohit Kurve",
+    role: "Technical Lead",
     image: "/images/members/Rohit.jpeg",
     specialty: "Systems Architecture & Deep Tech",
     quote: "Deep technical rigor paired with peer curiosity is the fastest catalyst for engineering excellence.",
